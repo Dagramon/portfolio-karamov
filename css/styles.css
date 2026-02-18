@@ -1,0 +1,245 @@
+* {
+    padding:  0;
+    margin: 0;
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 100px;
+}
+a {
+    text-decoration: none;
+    color: rgb(185, 183, 255);
+    text-shadow:  1px 1px 2px black;
+}
+header {
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: rgb(20, 20, 20);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 5px rgb(108, 41, 117) solid;
+}
+header h1
+{
+    justify-self: center;
+}
+header nav {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
+}
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 50vh;
+    background-color: rgb(20, 20, 20);
+    overflow: scroll;
+    scrollbar-width: none;
+    border-bottom: 5px rgb(108, 41, 117) solid;
+}
+.profile-info h1 {
+    background: linear-gradient(45deg, white, rgb(92, 26, 179));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.profile-info img {
+    height: 200px;
+    width: 200px;
+}
+.item-info {
+    overflow: hidden;
+    border-left: 2px orange solid;
+    background-color: rgb(68, 41, 117);
+    padding: 15px;
+}
+.item-info-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-left: 2px orange solid;
+    background-color: rgb(68, 41, 117);
+    padding: 15px;
+}
+.item-info-flex img {
+    width: 250px;
+    height: 250px;
+}
+main {
+    overflow: hidden;
+    height: max-content;
+    background: linear-gradient(rgb(20, 20, 20), rgb(68, 41, 117));
+}
+.line {
+    height: 2px;
+    background-color: rgb(108, 41, 117);
+}
+.item-main {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    margin: 5%;
+    padding: 25px;
+    height: fit-content;
+    background-color: rgba(90, 48, 95, 0.5);
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0)
+}
+.item-main h1 {
+    color: white;
+    text-shadow: 2px 2px 15px orange;
+}
+.languages {
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.languages img {
+    height: 75px;
+    width: 75px;
+}
+.items-container {
+    justify-content: center;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+.items-container img {
+    overflow: hidden;
+}
+.gramota {
+    overflow: hidden;
+    border: 5px black solid;
+    height: 500px;
+    width: 350px;
+}
+.item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    height: 775px;
+    width: 300px;
+    background-color: rgba(90, 48, 95, 0.5);
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0)
+}
+.item-container-work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    height: 500px;
+    width: 500px;
+    background-color: rgba(90, 48, 95, 0.5);
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0)
+}
+.item-container-work h1 {
+    z-index: 1;
+}
+.item-container-work p {
+    z-index: 1;
+}
+.item-container-work a {
+    z-index: 1;
+}
+.item-container-work .button {
+    margin-left: auto; 
+    margin-top: auto; 
+}
+.button {
+    border: 2px black solid;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 125px;
+    text-align: center;
+    align-content: center;
+    background-color: orange;
+}
+.item-container-work img {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.item-container li::before {
+  content: "✔";
+  color: rgba(103, 247, 103, 0.596);
+  display: inline-block;
+  width: 1em;
+  font-size: 25px;
+  
+}
+ul {
+    list-style: none;
+}
+.item-main li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-container h2 {
+    color: orange;
+    text-shadow: 1px 1px 5px black;
+}
+.item-container ul {
+    list-style-type: none;
+}
+.telegram {
+    display: inline-block;
+    padding: 20px 20px;
+    background-image: url("../images/telegram.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.github {
+    display: inline-block;
+    padding: 20px 20px;
+    background-image: url("../images/github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(20, 20, 20);
+    height: 20vh;
+}
+.competentions-list {
+    padding-left: 5px;
+    border-left: 1px orange solid;
+}
